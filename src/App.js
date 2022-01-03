@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import ErrorPage from "./components/ErrorPage";
+import ProfileDetails from "./components/ProfileDetails";
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/profile/:username" element={<Profile />} />
-        <Route path="*" element={<ErrorPage />} /> 
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/:username" element={<ProfileDetails />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
