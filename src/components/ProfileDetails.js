@@ -2,8 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import userProfiles from "../profileData";
 export default function ProfileDetails() {
-  const { username } = useParams();
-  const currentUser = userProfiles.find((user) => +user.id === +username);
+  const { userid } = useParams();
+  const currentUser = userProfiles.find((user) => +user.id === +userid);
 
   return (
     <div>
